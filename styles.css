@@ -64,6 +64,7 @@ body {
   bottom: 42%;
   right: 2%;
   margin:2px;
+  display: flex;
 }
 
 .shuffle-btn{
@@ -79,6 +80,24 @@ font-size: 1.6rem;
 
 }
 .shuffle-btn:hover{
+  transform: scale(1.01);
+  transition:smooth;
+  transition-duration: 1s;
+}
+.reset-btn{
+  color: red;
+  background-color: #FAFFD8;
+padding: 12px 20px;
+border-radius: 8px;
+box-shadow:1px 1px 1px 1px rgb(51, 50, 50);
+transition:smooth;
+transition-duration: 1s;
+font-family: ubuntu;
+font-size: 1.6rem;
+margin-left: 5px;
+
+}
+.reset-btn:hover{
   transform: scale(1.01);
   transition:smooth;
   transition-duration: 1s;

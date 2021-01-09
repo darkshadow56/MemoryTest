@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll(".card");
 console.log(cards);
-const button = document.querySelector(".btn");
-const resetButton = document.getElementById("#reset-btn")
+const button = document.querySelector(".sButton");
+const resetButton = document.querySelector(".rButton")
 //variables
 var isFlipped = false;
 var firstCard;
@@ -41,13 +41,15 @@ function success() {
   reset();
 }
 
+
+
 function fail() {
   //   console.log("Failed");
   setTimeout(() => {
     firstCard.classList.remove("flip");
     secondCard.classList.remove("flip");
     reset();
-  }, 1000);
+  }, 700);
 }
 
 function reset() {
@@ -64,8 +66,15 @@ function shuffle() {
     card.style.order = index;
   });
 };
+cards.forEach((card) => {
+  if(success == true){
+    alert('Winner');
+  }
+} )
+window.onload = shuffle();
 
-window.onload = shuffle;
 button.addEventListener("click", () =>{shuffle()});
-resetButton.addEventListener("click", () =>{reset()})
+resetButton.addEventListener("click", () => {
+  window.location.reload();
+});
 window.onload = () => {alert('Very simple game to test your memory, Just Guess similar emojis under 2 Cards')}
