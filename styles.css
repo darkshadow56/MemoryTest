@@ -62,13 +62,14 @@ body {
 .btn{
   position: fixed;
   bottom: 42%;
-  right: 8%;
+  right: 2%;
+  margin:2px;
 }
 
 .shuffle-btn{
   color: red;
   background-color: #FAFFD8;
-padding: 15px 40px;
+padding: 12px 20px;
 border-radius: 8px;
 box-shadow:1px 1px 1px 1px rgb(51, 50, 50);
 transition:smooth;
@@ -107,7 +108,7 @@ font-size: 3.2rem;
   .btn{
     position: fixed;
     bottom: 53%;
-    right: 40%;
+    right: 32%;
   }
   
 }
@@ -133,7 +134,7 @@ font-size: 3.2rem;
   .btn{
     position: fixed;
     bottom: 53%;
-    right: 40%;
+    right: 32%;
   }
   
 }

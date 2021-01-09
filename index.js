@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll(".card");
 console.log(cards);
 const button = document.querySelector(".btn");
-
+const resetButton = document.getElementById("#reset-btn")
 //variables
 var isFlipped = false;
 var firstCard;
@@ -67,4 +67,5 @@ function shuffle() {
 
 window.onload = shuffle;
 button.addEventListener("click", () =>{shuffle()});
+resetButton.addEventListener("click", () =>{reset()})
 window.onload = () => {alert('Very simple game to test your memory, Just Guess similar emojis under 2 Cards')}
